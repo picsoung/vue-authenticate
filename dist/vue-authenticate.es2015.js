@@ -1,5 +1,5 @@
 /*!
- * vue-authenticate v1.3.0
+ * vue-authenticate v1.3.1
  * https://github.com/dgrubelic/vue-authenticate
  * Released under the MIT License.
  */
@@ -578,6 +578,19 @@ var defaultOptions = {
       requiredUrlParams: ['display', 'scope'],
       scope: ['wl.emails'],
       scopeDelimiter: ' ',
+      display: 'popup',
+      oauthType: '2.0',
+      popupOptions: { width: 500, height: 560 }
+    },
+
+    stripe: {
+      name: 'stripe',
+      url: '/auth/stripe',
+      authorizationEndpoint: 'https://connect.stripe.com/oauth/authorize',
+      redirectUri: null,
+      requiredUrlParams: null,
+      scope: ['read_only'],
+      scopeDelimiter: '',
       display: 'popup',
       oauthType: '2.0',
       popupOptions: { width: 500, height: 560 }
