@@ -142,6 +142,19 @@ export default {
       popupOptions: { width: 500, height: 560 }
     },
 
+    stripe: {
+      name: 'stripe',
+      url: '/auth/stripe',
+      authorizationEndpoint: 'https://connect.stripe.com/oauth/authorize',
+      redirectUri: null,
+      requiredUrlParams: null,
+      scope: ['read_only'],
+      scopeDelimiter: '',
+      display: 'popup',
+      oauthType: '2.0',
+      popupOptions: { width: 500, height: 560 }
+    },
+
     oauth1: {
       name: null,
       url: '/auth/oauth1',
